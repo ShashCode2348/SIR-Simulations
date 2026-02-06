@@ -136,6 +136,7 @@ step_len, duration = 0.1, 200       #both in days, step_len is how much time eac
 recovery_rate = 1/10 * step_len     #10 days on average to recover
 distance_const = 1e-4 * (W_sim**2 + H_sim**2)
 
+#Particle setup
 particles = []
 for _ in range(int(S)):
     particles.append(Particle(position=[round(random()*(W_sim-2*circle_radius))+circle_radius, round(random()*(H_sim-2*circle_radius)+circle_radius)], acceleration_dir=round(random()*math.pi/5, 2), velocity_dir=round(random()*2*math.pi, 2), state=0))
@@ -182,3 +183,4 @@ pygame.display.update()
 particle_list.main_loop()
 pygame.quit()
 sys.exit(0)
+
