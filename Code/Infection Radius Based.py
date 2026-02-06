@@ -126,14 +126,17 @@ W, H = 1400, 700
 W_sim, H_sim = 600, 600
 W_offset, H_offset = 750, 25
 circle_radius = 3
-
-S, I, R = 1492.0, 8.0, 0.0
-population = S + I + R
-step_len, duration = 0.1, 200
-trans_rate, recovery_rate = 0.3, 1/10 * step_len
-infection_radius = 15
 colour_dict = {0: "#4C88F7", 1: "#ED5151", 2: "#676767"}
 
+#Parameters
+S, I, R = 992.0, 8.0, 0.0
+population = S + I + R
+step_len, duration = 0.1, 200       #both in days, step_len is how much time each frame represents
+trans_rate = 0.3        #transmission rate
+recovery_rate = 1/10 * step_len    #takes 10 days on average to recover
+infection_radius = 15
+
+#Particle setup
 particles = []
 for _ in range(int(S)):
     particles.append(Particle(position=[round(random()*(W_sim-2*circle_radius))+circle_radius, round(random()*(H_sim-2*circle_radius)+circle_radius)], acceleration_dir=round(random()*math.pi/5, 2), velocity_dir=round(random()*2*math.pi, 2), state=0))
@@ -180,3 +183,4 @@ pygame.display.update()
 particle_list.main_loop()
 pygame.quit()
 sys.exit(0)
+
