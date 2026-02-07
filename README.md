@@ -28,3 +28,4 @@ Download the Python file of your choice, and simply run it. You can also change 
 
 There is also a file called 'Infection Radius Based.py' - this is a bonus file of sorts, operating on the basis of infection radius instead of the aforementioned system. Feel free to use it, and compare it to the other models.
 
+![View Counter](https://view-counter.tobyhagan.com/?user=ShashCode2348/SIR-Simulations)
