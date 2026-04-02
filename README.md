@@ -14,7 +14,7 @@ For the situations with interventions, the interventions are after 20 days, and 
 
 An SIR Model is a type of model used to model the spread of a pathogen. It splits people into 3 groups: Susceptible, who haven't been infected; Infected, who are currently infected; and removed, who were infected, but have since recovered or passed away. It is primarily determined by 2 values: transmission rate, the number of susceptible people becoming infected per infected person (or how many people an infected person infects per frame); and recovery rate, the number of infected people becoming removed per infected person (or the probability that an infected person recovers in a given frame).
 
-Rather than basing infection rate off an infection radius (having a certain fixed probability of becoming infected if you are within a certain radius of an infected person, else you won't be infected), I opted for a system in which probability is inversely proportional to the fourth power of distance between the particles. The constant of proportinality for this is distance_const, so feel free to change it if you wish.
+Rather than basing infection rate off an infection radius (having a certain fixed probability of becoming infected if you are within a certain radius of an infected person, else you won't be infected), I opted for a system in which probability is inversely proportional to the fourth power of distance between the particles. The constant of proportionality for this is distance_const, so feel free to change it if you wish.
 
 ## Requirements
 
