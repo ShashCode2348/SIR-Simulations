@@ -19,7 +19,7 @@ Rather than basing infection rate off an infection radius (having a certain fixe
 ## Requirements
 
 - Python 3
-- Matplotlib (with matplotlib-pygame addition)
+- Matplotlib (with matplotlib-pygame extension)
 - Pygame
 
 ## Usage
